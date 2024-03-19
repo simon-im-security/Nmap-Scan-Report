@@ -1,7 +1,7 @@
-# Nmap Scan Report (Mac)
+# Nmap Scan Report
 
 ## Description:
-Nmap Scan Report is a bash script designed for macOS that conducts a comprehensive port scan and produces a detailed report of open ports and services running on a target system. The script utilizes the Nmap tool to perform the scan and generates an HTML report for further analysis.
+Nmap Scan Report is a bash script designed to conduct a comprehensive port scan and produce a detailed report of open ports and services running on a target system. The script utilizes the Nmap tool to perform the scan and generates an HTML report for further analysis.
 
 ## Features:
 - Conducts a thorough port scan using Nmap.
@@ -15,5 +15,6 @@ Nmap Scan Report is a bash script designed for macOS that conducts a comprehensi
 ## Usage:
 To execute the script, you can use the following one-liner command:
 
+**Mac**
 ```bash
 curl -o /private/tmp/nmap_scan_report.sh https://raw.githubusercontent.com/simon-im-security/Nmap-Scan-Report/main/Nmap%20Scan%20Report.sh && chmod +x /private/tmp/nmap_scan_report.sh && /private/tmp/nmap_scan_report.sh
