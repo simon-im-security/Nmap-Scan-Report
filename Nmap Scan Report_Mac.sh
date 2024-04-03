@@ -141,7 +141,7 @@ while true; do
 done
 
 # Run Nmap scan for the input target and save results to XML
-if ! sudo nmap $scan_type -A -oX "/private/tmp/port_scan_results.xml" $target; then
+if ! nmap $scan_type -A -oX "/private/tmp/port_scan_results.xml" $target; then
     error_exit "Nmap scan failed."
 fi
 
@@ -151,7 +151,7 @@ if [ ! -e "/private/tmp/port_scan_results.xml" ]; then
 fi
 
 # Generate HTML report from XML
-if ! sudo xsltproc -o "/private/tmp/port_scan_results.html" /usr/local/bin/../share/nmap/nmap.xsl "/private/tmp/port_scan_results.xml"; then
+if ! xsltproc -o "/private/tmp/port_scan_results.html" /usr/local/bin/../share/nmap/nmap.xsl "/private/tmp/port_scan_results.xml"; then
     error_exit "HTML report generation failed."
 fi
 
