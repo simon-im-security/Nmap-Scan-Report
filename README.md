@@ -1,13 +1,13 @@
 # Nmap Scan Report
 
 ## Description:
-Nmap Scan Report is a bash script designed to conduct a comprehensive port scan and produce a detailed report of open ports and services running on a local system. The script utilises the Nmap tool to perform the scan and generates a HTML report for further analysis.
+Nmap Scan Report is a bash script that conducts thorough port scans using Nmap, revealing open ports and services on a target system. It then generates a detailed HTML report for analysis, helping network administrators and security professionals identify potential vulnerabilities and strengthen network defenses.
 
 ## Features:
-- Conducts a comprehensive port scan using Nmap, including TCP SYN, UDP, version detection, and OS detection scans.
-- Generates an HTML report with detailed information about open ports and services.
-- Provides options to scan the local machine (loopback) or specify an IP range (CIDR notation).
-- Offers additional information on macOS ports used by Apple.
+- Conducts targeted Nmap scans including TCP Connect, ICMP Ping, and Service Version Detection.
+- Generates detailed HTML reports illustrating discovered open ports and services.
+- Provides options to scan either the local machine (loopback) or specify an IP range using CIDR notation.
+- While focusing on TCP Connect and ICMP Ping scans, it offers comprehensive insights into detected services and open ports, enhancing network visibility and security analysis.
 
 ## Screenshot:
 ![Nmap Scan Report](https://github.com/simon-im-security/Nmap-Scan-Report/raw/main/nmap-scan-report-image.png)
